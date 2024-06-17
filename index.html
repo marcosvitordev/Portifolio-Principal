@@ -1,29 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Marcos Vitor - marcosvitordev</title>
+    <title>Portfólio de Marcos Vitor</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Marcos Vitor</a>
-        <i class="fa-solid fa-bars menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand " href="#">Marcos Vitor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div id="home" class="jumbotron">
+        <div class="container text-center mfs">
+            <div class="row">
+                <div class="col-sm-6 p-2 text-center">
+                    <img src="assets/logo.jpg" alt="Logo" class="logo">
+                </div>
+                <div class="col-sm-6 p-3  mt-5">
+                    <h3>Olá, Eu sou o</h3>
+                    <h1>Marcos Vitor</h1>
+                    <h2>Frontend Developer</h2>
+                    <div>
+                        <button type="button" class="btn btn-outline-primary btn-custom">Download CV</button>
+                        <button type="button" class="btn btn-secondary btn-custom">Contato</button>
+                    </div>
+                    <div class="icon-container">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre -->
+    <div id="about" class="container mt-5">
+        <h2 class="section-title">Sobre Mim</h2>
+        <p>Coloque aqui suas informações, como sua formação, experiência e interesses.</p>
+    </div>
+
+    <!-- Projetos -->
+    <div id="projects" class="container mt-5">
+        <h2 class="section-title">Projetos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Descrição breve do projeto 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Descrição breve do projeto 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Projeto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 3</h5>
+                        <p class="card-text">Descrição breve do projeto 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Habilidades -->
+    <div id="skills" class="container mt-5">
+        <h2 class="section-title">Habilidades</h2>
+        <ul class="list-group">
+            <li class="list-group-item">HTML / CSS / JavaScript</li>
+            <li class="list-group-item">Python / Django</li>
+            <li class="list-group-item">Java / Spring</li>
+            <li class="list-group-item">SQL / NoSQL</li>
+        </ul>
+    </div>
+
+    <!-- Contato -->
+    <div id="contact" class="container mt-5 mb-5">
+        <h2 class="section-title">Contato</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Script do Bootstrap e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
