@@ -143,4 +143,32 @@ body::-webkit-scrollbar-thumb:hover {
 .navbar-nav li {
     margin-left: 30px;
 }
+.circle-1{
+    position: absolute;
+    left: 78px;
+    bottom: 1px;
+    width: 418px;
+    height: 418px;
+    border-radius: 50%;
+}
 
+.circle-1 {
+    width: 418px;
+    height: 418px;
+    border: 5px dashed #000000d7;
+    border-radius: 50%;
+    animation: rotate 0.5s linear infinite;
+    animation-delay: 50ms;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
