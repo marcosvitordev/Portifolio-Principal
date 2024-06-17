@@ -1,17 +1,41 @@
-.logo{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    /* font-family: "Lato", sans-serif !important; */
+    font-family: "Source Code Pro", sans-serif !important;
+    font-weight: 100;
+    font-style: normal;
+    /* background-color: #55555515 !important; */
+    /* background-color: #3f413f !important; */
+
+}
+
+.nome {
+    font-weight: 900 !important;
+}
+
+.logo {
     width: 400px;
     height: 400px;
     border-radius: 50%;
 }
-.mfs{
+
+.mfs {
     margin-top: -90px !important;
 }
+
 .jumbotron {
     height: 100vh;
-    color: rgb(0, 0, 0)  !important;
+    color: rgb(0, 0, 0) !important;
     display: flex;
     align-items: center;
-    background-color: rgb(255, 255, 255) !important;
+    background-color: transparent !important;
 }
 
 .section-title {
@@ -33,11 +57,19 @@
 }
 
 .navbar {
-    
+    font-size: 16pt !important;
 }
 
-.nav-link ,.navbar-brand{
+.nav-link,
+.navbar-brand {
     color: rgb(0, 0, 0) !important;
+    font-size: 15pt !important;
+}
+
+.navbar-brand {
+    font-size: 20pt !important;
+    font-weight: 800;
+
 }
 
 .btn-custom {
@@ -49,6 +81,66 @@
 }
 
 .icon-container ion-icon {
-    font-size: 24px;
+    font-size: 30px;
     margin: 0 10px;
 }
+
+.btn {
+    height: 50px;
+    width: 150px;
+    border-radius: 30px !important;
+}
+
+.btn-outline-primary {
+    color: black !important;
+    border-color: black !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: rgba(2, 2, 2, 0.37) !important;
+    color: black !important;
+    transition: 0.5s;
+}
+
+.navbar-toggler ion-icon {
+    font-size: 25pt;
+}
+
+.nav-link:hover {
+    color: rgb(134, 128, 128) !important;
+    transition: 0.3s;
+}
+
+.icon-container a ion-icon {
+    color: black;
+}
+
+.icon-container a ion-icon:hover {
+    color: rgb(114, 102, 102);
+    transition: 0.5s;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* largura da scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* cor de fundo da track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* cor do thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* cor do thumb no hover */
+}
+
+.navbar-nav li {
+    margin-left: 30px;
+}
+
