@@ -21,3 +21,7 @@ function downloadPDF() {
     link.download = 'Curriculo_Marcos-Vitor.pdf';  // Nome do arquivo que será baixado
     link.click();
 }
+
+function abrirSite(url) {
+    window.open(url, '_blank');
+}
