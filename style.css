@@ -28,9 +28,9 @@ body {
 .mfs {
     margin-top: -90px !important;
 }
-@media (max-width: 700px) {
+@media (min-width: 600px) {
     .mfs {
-        margin-top: 90px !important;
+        margin-top: -90px !important;
     }
 }
 
