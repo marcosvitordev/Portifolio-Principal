@@ -3,14 +3,18 @@
 
 html {
     scroll-behavior: smooth;
+    
 }
-
+.card-text{
+    height: 220px;
+}
 
 body {
     /* font-family: "Lato", sans-serif !important; */
     font-family: "Source Code Pro", sans-serif !important;
     font-weight: 100;
     font-style: normal;
+    
     /* background-color: #55555515 !important; */
     /* background-color: #3f413f !important; */
 
@@ -81,9 +85,12 @@ body {
     font-weight: 800;
 
 }
-
+#btn-cv{
+    font-size: 12pt;
+}
 .btn-custom {
     margin: 10px 5px;
+    font-size: 10pt;
 }
 
 .icon-container {
@@ -94,9 +101,9 @@ body {
     font-size: 30px;
     margin: 0 10px;
 }
-
 .btn {
-    height: 50px;
+    
+    height: 55px;
     width: 150px;
     border-radius: 30px !important;
 }
